@@ -1,0 +1,354 @@
+@font-face {
+    font-family: comic;
+    src: url('../fonts/comic.ttf');
+}
+
+body {
+    font-family: comic, 'Comic Sans MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #715241;
+}
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: #715241;
+}
+
+a:hover {
+    color: #bf8e78;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.main__header,
+.contact__news,
+.contact__information__messengers,
+.sell__navigation,
+.information__item,
+.main__content__service,
+.main__content__information,
+.main__footer__information,
+.main__footer__term {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.main__header {
+    width: 960px;
+}
+
+.main__header__logo {
+    background: url("../images/logo/logo.png") no-repeat;
+    height: 109px;
+    width: 158px;
+}
+
+.main__header__contact {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin-left: 10px;
+}
+
+.main__header__logo,
+.main__header__contact,
+.contact__news__request {
+    margin-right: 15px;
+}
+
+.contact__news__request,
+.contact__news__cooperation {
+    font-size: 12px;
+}
+
+.contact__news__request:before,
+.contact__news__cooperation:before {
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+.contact__news__request:before {
+    content: "";
+    background: url("../images/icons/news.png") no-repeat;
+}
+
+.contact__news__cooperation:before {
+    content: "";
+    background: url("../images/icons/hands.png") no-repeat;
+}
+
+.contact__information__telephone {
+    font-size: 36px;
+}
+
+.contact__information__messengers {
+    justify-content: center;
+}
+
+.messenger {
+    height: 40px;
+    width: 44px;
+    margin-right: 20px;
+}
+
+.messenger.--viber {
+    background: url("../images/icons/viber.png") no-repeat;
+}
+
+.messenger.--telegram {
+    background: url("../images/icons/telegram.png") no-repeat;
+}
+
+.messenger.--whatsapp {
+    background: url("../images/icons/whatsapp.png") no-repeat;
+    margin-right: 0;
+}
+
+.main__header__sell {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+.sell__navigation.--order {
+    background: url("../images/icons/delivery.png") no-repeat;
+}
+
+.sell__navigation.--cart {
+    background: url("../images/icons/cart.png") no-repeat;
+}
+
+.sell__navigation {
+    margin-bottom: 2px;
+}
+
+.sell__navigation.--wish,
+.sell__navigation.--order,
+.sell__navigation.--cart {
+    padding-left: 30px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.sell__navigation.--wish {
+    background: url("../images/icons/hurt.png") no-repeat;
+    margin: 0px;
+}
+
+.sell__search {
+    height: 25px;
+    width: 200px;
+    font-family: comic;
+    font-style: italic;
+    font-size: 12px;
+    border: 2px solid #715241;
+    color: #715241;
+    padding: 0 35px 0 10px;
+    background-image: url("../images/icons/search.png");
+    background-repeat: no-repeat;
+    background-position: 220px;
+    margin: 6px 0 5px 0;
+}
+
+.sell__search::placeholder {
+    display: none;
+    font-family: comic;
+    font-style: italic;
+    font-size: 12px;
+    color: #715241;
+}
+
+.sell__search:hover,
+.sell__search:active,
+.sell__search:focus {
+    outline: none;
+}
+
+.sell__location {
+    margin-top: 7px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+
+.service__block__part {
+    display: flex;
+    flex-flow: row nowrap;
+    letter-spacing: -2px;
+}
+
+.part__item {
+    margin-right: 12px;
+    text-align: center;
+}
+
+.part__item__text {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+}
+
+.part__item__image {
+    height: 100px;
+    width: 160px;
+}
+
+.part__item__image.--outdoor {
+    background: url("../images/images/outdoor.png") no-repeat;
+}
+
+.part__item__image.--indoor {
+    background: url("../images/images/indoor.png") no-repeat;
+}
+
+.part__item__image.--people {
+    background: url("../images/images/people.png") no-repeat;
+}
+
+.part__item__image.--hobby {
+    background: url("../images/images/hobby.png") no-repeat;
+}
+
+.part__item__image.--gift {
+    background: url("../images/images/gift.png") no-repeat;
+}
+
+.part__item__image.--books {
+    background: url("../images/images/books.png") no-repeat;
+}
+
+.part__item__image.--creative {
+    background: url("../images/images/creative.png") no-repeat;
+}
+
+.part__item__image.--hitech {
+    background: url("../images/images/hitech.png") no-repeat;
+}
+
+a.part__item:visited,
+a.information__item:visited,
+a.part__item:link,
+a.information__item:link {
+    text-decoration: none;
+    color: #715241;
+}
+
+a.part__item:hover,
+a.information__item:hover {
+    color: #bf8e78;
+}
+
+.item__promotion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 250px;
+    color: #00962a;
+    font-size: 48px;
+    letter-spacing: -2px;
+}
+
+.main__content__instagram {
+    padding: 5px 0 5px 0;
+    background: #f0ece3;
+    text-align: center;
+}
+
+.instagram__link {
+    margin-right: 40px;
+}
+
+.main__content__instagram,
+.main__footer {
+    font-size: 18px;
+}
+
+.main__content__information {
+    background: #f0ece3;
+    padding-bottom: 25px;
+}
+
+.information__item {
+    width: 320px;
+    justify-content: flex-end;
+    background: white;
+}
+
+.information__item__text {
+    font-size: 24px;
+}
+
+.information__item__image {
+    height: 172px;
+    width: 193px;
+}
+
+.information__item__image.--items {
+    background: url("../images/images/newitems.png") no-repeat;
+}
+
+.information__item__image.--catalog {
+    background: url("../images/images/catalog.png") no-repeat;
+}
+
+.information__item__image.--blog {
+    background: url("../images/images/blog.png") no-repeat;
+}
+
+.main__footer {
+    width: 960px;
+}
+
+.main__footer__information {
+    padding: 10px 0 10px 0;
+}
+
+.signup__button {
+    font-family: comic;
+    font-size: 18px;
+    border: none;
+    color: #715241;
+    background: #ffffff;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+.signup__input {
+    height: 30px;
+    width: 210px;
+    border: 2px solid #715241;
+    padding: 0 5px;
+    font-family: comic;
+    font-size: 18px;
+    color: #715241;
+}
+
+.signup__input::placeholder {
+    display: none;
+    font-family: comic;
+    font-size: 18px;
+    color: #715241;
+    text-align: center;
+}
+
+.main__footer__term {
+    background: #f0ece3;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="assets/lib/jquery-3.3.1.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="main__header">
+        <a href="main.html" class="main__header__logo"></a>
+        <div class="main__header__contact">
+            <div class="contact__news">
+                <a class="trn contact__news__request" href="#" data-trn-key="Request news">Request news</a>
+                <a class="trn contact__news__cooperation" href="#" data-trn-key="Cooperation">Cooperation</a>
+            </div>
+            <div class="contact__information trn">
+                <a class="contact__information__telephone trn" href="tel:+468-90-25-03-63">+468-90-25-03-63</a>
+                <div class="contact__information__messengers">
+                    <a title="Viber" href="viber://chat?number=+468-90-25-03-63" class="messenger --viber"></a>
+                    <a title="Telegram" href="tg://resolve?domain=@raitvok" class="messenger --telegram"></a>
+                    <a title="WhatsApp" href="whatsapp://send?phone=+468-90-25-03-63" class="messenger --whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="main__header__sell">
+            <div class="sell__navigation">
+                <a href="#" class="trn sell__navigation --wish" data-trn-key="Wish List">Wish List</a>
+                <a href="#" class="trn sell__navigation --order" data-trn-key="Order Status">Order Status</a>
+                <a href="#" class="trn sell__navigation --cart" data-trn-key="Cart (0) items">Cart (0) items</a>
+            </div>
+            <input class="sell__search trn" data-trn-key="Keyword/Item#" type="text" placeholder="Keyword/Item#">
+            <div class="sell__location">
+                <div class="sell__location__text trn" data-trn-key="My shipping location:">My shipping location:</div>
+                <img class="sell__location__flag lanSelector" onclick="attr()" src="assets/images/icons/en.png" data-value="en" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/javascript/main.js"></script>
+<script src="assets/javascript/jquery.translate.js"></script>
+<script src="assets/javascript/dictionary.js"></script>
+
+</body>
+</html>
